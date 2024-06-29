@@ -1,7 +1,7 @@
 @font-face {
-    font-family: 'Tajawal-Regular';
-    src: url('../font/Tajawal-Regular.ttf') format('woff');
-    font-weight: normal;
+    font-family: 'Tajawal-ExtraBold';
+    src: url('../font/Tajawal-ExtraBold.ttf') format('woff');
+    font-weight: bolder;
     font-style: normal;
 }
 
@@ -13,11 +13,27 @@
 }
 
 @font-face {
-    font-family: 'Tajawal-Light';
-    src: url('../font/Tajawal-Light.ttf') format('woff');
+    font-family: 'Tajawal-Medium';
+    src: url('../font/Tajawal-Medium.ttf') format('woff');
     font-weight: 500;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Tajawal-Regular';
+    src: url('../font/Tajawal-Regular.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tajawal-Light';
+    src: url('../font/Tajawal-Light.ttf') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
 
 body {
     background: #221763;
@@ -58,12 +74,12 @@ body {
 
 
 
-.color-half2  {
+.color-half2 {
     clip-path: polygon(100% 0, 100% 50%, 0% 65%, 0% 0%);
     background: linear-gradient(to top, #4B35B4, #221763);
 }
 
-.image-half2{
+.image-half2 {
     clip-path: polygon(100% 52%, 100% 100%, 0% 100%, 0% 67%);
     background: linear-gradient(to bottom, rgba(75, 53, 180, 0), #221763), url('/coding.jpg');
     background-size: cover;
@@ -75,6 +91,7 @@ body {
     margin: 25px;
     text-align: right;
 }
+
 .textofhalf2 {
     position: absolute;
     top: 0;
@@ -82,6 +99,7 @@ body {
     text-align: right;
 }
 
+/* slick carousel */
 
 * {
     font-family: "Tajawal-Regular";
@@ -176,6 +194,90 @@ body {
     position: absolute;
     bottom: 221px;
 }
+
+.slick-slider {
+    display: flex !important;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+button.slick-prev {
+    background: url('/viloetarrowright.png');
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    border: none;
+}
+
+button.slick-next {
+    background: url('/viloetarrow.png');
+    margin: 10px;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    border: none;
+}
+
+.card-slider {
+    height: 426px;
+    width: 392px !important;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.24);
+    border-radius: 20px;
+    padding: 0;
+}
+
+.owl-item {
+    width: 417.333px !important;
+}
+
+.card-img {
+    width: 100%;
+    height: 224px;
+    border-radius: 20px;
+}
+
+div.card-body h1.title {
+    font-family: 'Tajawal-ExtraBold';
+    font-size: 24px;
+}
+
+div.card-body button {
+    width: 136px;
+    height: 20px;
+    /* Added px for the height */
+    border-radius: 30px;
+    background-color: inherit;
+    border: none;
+    /* Optional: Removes any default border */
+    padding: 5px 10px;
+    margin-top: 13px;
+    /* Optional: Adds padding for better spacing */
+    cursor: pointer;
+    /* Optional: Changes cursor to pointer on hover */
+}
+
+div.card-body button span {
+    color: #F78D2B;
+    font-size: 16px;
+    font-family: 'Tajawal-Bold';
+}
+
+/* Optional: Adding hover effect */
+div.card-body button:hover {
+    background-color: #f0f0f0;
+    /* Change background color on hover */
+}
+
+.slick-track {
+    opacity: 1;
+    width: 1374px !important;
+    transform: translate3d(0px, 0px, 0px);
+    display: flex !important;
+    justify-content: space-evenly !important;
+}
+
 
 .pricing-img {
     margin-bottom: 25px;
