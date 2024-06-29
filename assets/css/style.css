@@ -26,6 +26,63 @@ body {
     padding: 0;
 }
 
+.containero {
+    position: relative;
+    width: 584px;
+    height: 575px;
+    background: linear-gradient(to top, rgba(75, 53, 180, 0) 0%, #221763 100%);
+}
+
+.image-half,
+.color-half,
+.image-half2,
+.color-half2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.image-half {
+    clip-path: polygon(100% 0, 100% 28%, 0% 45%, 0% 0%);
+    background: linear-gradient(to top, rgba(75, 53, 180, 0), #221763), url('/laptop.jpg');
+    background-size: cover;
+}
+
+.color-half {
+    clip-path: polygon(100% 30%, 100% 100%, 0% 100%, 0% 47%);
+    background: linear-gradient(to bottom, #4B35B4, #221763);
+}
+
+
+
+.color-half2  {
+    clip-path: polygon(100% 0, 100% 50%, 0% 65%, 0% 0%);
+    background: linear-gradient(to top, #4B35B4, #221763);
+}
+
+.image-half2{
+    clip-path: polygon(100% 52%, 100% 100%, 0% 100%, 0% 67%);
+    background: linear-gradient(to bottom, rgba(75, 53, 180, 0), #221763), url('/coding.jpg');
+    background-size: cover;
+}
+
+.textofhalf {
+    position: absolute;
+    bottom: 0;
+    margin: 25px;
+    text-align: right;
+}
+.textofhalf2 {
+    position: absolute;
+    top: 0;
+    margin: 25px;
+    text-align: right;
+}
+
+
 * {
     font-family: "Tajawal-Regular";
 }
@@ -281,7 +338,7 @@ button {
 
 /********** copyright **********/
 #copyright {
-    background: #192440;
+    background: #F78D2B;
     padding: 2rem 3rem;
 }
 
