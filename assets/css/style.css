@@ -105,7 +105,13 @@ body {
     text-align: right;
 }
 
-/* slick carousel */
+.About2 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 100%;
+    height: 899px;
+    margin: 0;
+}
 
 
 
@@ -142,6 +148,18 @@ body {
     bottom: 0;
     transform: translateX(38%);
     left: 0;
+}
+
+.first-container {
+    background-image: url('/Group 8.png');
+    background-size: cover;
+    padding: 0 70px;
+    height: 600px;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .aaa {
@@ -199,64 +217,24 @@ body {
     bottom: 221px;
 }
 
-.slick-slider {
-    display: flex !important;
-    justify-content: space-evenly;
-    align-items: center;
-}
 
-button.slick-prev {
-    background: url('/viloetarrowright.png');
-    background-size: cover;
-    width: 40px;
-    height: 40px;
-    margin: 10px;
-    border: none;
-}
 
-button.slick-next {
-    background: url('/viloetarrow.png');
-    margin: 10px;
-    background-size: cover;
-    width: 40px;
-    height: 40px;
-    border: none;
-}
 
-.card-slider {
-    height: 426px;
-    width: 392px !important;
-    margin: 10px;
-    background-color: rgba(255, 255, 255, 0.24);
-    border-radius: 20px;
-    padding: 0;
-}
-
-div.carousel2 div.card-slider {
-    display: flex !important;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 307px;
-    width: 704px !important;
-    margin: 10px;
-    background-color: rgba(255, 255, 255, 0.08);
-    border-radius: 20px;
-    padding: 0 50px;
-}
-
-div.carousel2 div.card-slider div.card-body.text {
+.title-termino {
     font-size: 24px;
     font-family: 'Tajawal-Bold';
+    margin: 0 !important;
 }
 
-div.carousel2 div.card-slider div.card-body p.text1 {
+.text1-termino {
+    margin-bottom: 5px !important;
     font-size: 16px;
-    color: #AA99FA;
+    color: #AA99FA !important;
     font-family: 'Tajawal-Medium';
 }
 
-div.carousel2 div.card-slider div.card-body.text2 {
+
+.text2-termino {
     font-size: 18px;
 }
 
@@ -311,21 +289,8 @@ div.card-body button:hover {
     /* Change background color on hover */
 }
 
-.carousel .slick-track {
-    opacity: 1;
-    width: 1374px !important;
-    transform: translate3d(0px, 0px, 0px);
-    display: flex !important;
-    justify-content: space-evenly !important;
-}
 
-.carousel2 .slick-track {
-    opacity: 1;
-    width: 1374px !important;
-    transform: translate3d(0px, 0px, 0px);
-    display: flex !important;
-    justify-content: space-evenly !important;
-}
+
 
 
 ul {
@@ -473,6 +438,22 @@ li>a>p {
     padding: 100px 0;
 }
 
+.contact-title {
+    font-family: 'Tajawal-Bold';
+    font-size: 60px;
+    color: #fff;
+    padding-right: 15px;
+    text-align: right;
+}
+
+.contact-subtitle {
+    font-family: 'Tajawal-Medium';
+    font-size: 32px;
+    color: #8974EC;
+    text-align: right;
+    padding-right: 15px;
+}
+
 /********** copyright **********/
 #copyright {
     background: #F78D2B;
@@ -512,9 +493,192 @@ li>a>p {
     }
 }
 
-@media (max-width: 345px) {
-    #navbar{
-        flex-direction: column;
+@media (max-width: 412px) {
+    .navbar {
+        background-color: rgba(1, 23, 71, 0.8) !important;
     }
-  
+
+    #navbar {
+        flex-direction: column;
+        height: 73vh;
+    }
+
+    .nav-item {
+        margin: 20px;
+    }
+
+    ul,
+    li {
+        margin: 0;
+        padding: 0;
+    }
+
+    #navbar-last {
+        flex-direction: column !important;
+        margin: 20px 0;
+    }
+
+    .signup {
+        margin: 50px 0;
+    }
+
+    .circledashed {
+        top: -279px;
+    }
+
+    .playicon {
+        height: 96px;
+        width: 96px;
+        bottom: 185px !important;
+    }
+
+    .first-container {
+        padding: 0 57px;
+    }
+
+    .About,
+    .About2 {
+        height: 100% !important;
+    }
+
+    .image-half,
+    .image-half2 {
+        background-size: cover;
+        background-position: 50%;
+    }
+
+    .textofhalf2 {
+        margin: 16px;
+    }
+
+    .real-title {
+        font-size: 20px !important;
+    }
+
+    .real-text {
+        font-size: 13px !important;
+    }
+
+    .card-img2 {
+        height: 64px;
+        width: 65px;
+        border-radius: 50%;
+    }
+
+    .card-img {
+        height: 164px;
+        width: 75%;
+        border-radius: 20px;
+        margin: 0 auto;
+    }
+
+    .slick-slide .slide-content {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .feature4 {
+        background-position: 7% 27%;
+        background-size: 256%;
+    }
+
+    .formila {
+        padding: 20px 0;
+    }
+
+    .contact-title {
+        font-size: 54x;
+
+    }
+
+    .contact-subtitle {
+        font-size: 25px;
+    }
+
+    .contact-second {
+        margin-top: 100px;
+    }
+
+    .footer-list::before {
+        right: 1px;
+    }
+
+    .last-three div {
+        margin: 30px 10px !important;
+    }
+
+    .links {
+        margin-top: 100px;
+    }
+
+    .details {
+        margin-right: 0px;
+    }
+}
+
+@gutters: 10%;
+
+.card-img2 {
+    width: 50px;
+}
+
+.slick-slide {
+    direction: ltr;
+}
+
+.slick-slide .slide-content {
+    margin: 0 10%;
+    padding: 50px 100px;
+}
+
+.slick-list {
+    margin: 20px 0px;
+}
+
+.slick-prev {
+    background: url('/viloetarrow.png');
+    background-size: cover;
+}
+
+.slick-next {
+    background: url('/viloetarrowright.png');
+    background-size: cover;
+}
+
+.slick-prev,
+.slick-next {
+    position: absolute;
+    border: none;
+    color: transparent;
+    width: 30px;
+    height: 30px;
+}
+
+.slick-prev::before,
+.slick-next::before {
+    content: '';
+}
+
+
+
+.slick-dots {
+    list-style: none;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.slick-dots li {
+    display: inline-block;
+}
+
+.slick-dots li button {
+    transition: 0.2s background-color ease-in-out 0s;
+    border: none;
+    padding: 0;
+    color: transparent;
+    width: 10px;
+    height: 10px;
+    background-color: #777;
+    margin-right: 10px;
+    border-radius: 50%;
 }
