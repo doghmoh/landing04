@@ -713,8 +713,8 @@ li>a>p {
     z-index: 999;
 }
 
-.slick-prev::before,
-.slick-next::before,
+.slick-prev2::before,
+.slick-next2.aaa,
 .slick-prev::before,
 .slick-next::before {
     content: '';
