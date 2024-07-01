@@ -95,7 +95,7 @@ body {
 
 .image-half2 {
     clip-path: polygon(100% 52%, 100% 100%, 0% 100%, 0% 67%);
-    background: linear-gradient(to bottom, rgba(75, 53, 180, 0), #221763), url('../..coding.jpg');
+    background: linear-gradient(to bottom, rgba(75, 53, 180, 0), #221763), url('../../coding.jpg');
     background-size: cover;
 }
 
@@ -301,7 +301,7 @@ div.card-body button:hover {
 
 
 .dawarat {
-    background: url('/Rectanglecurved.png');
+    background: url('../../Rectanglecurved.png');
     background-repeat: repeat;
     background-size: auto;
     background-repeat: no-repeat;
