@@ -39,6 +39,14 @@
     box-sizing: border-box;
 }
 
+.first-section {
+    background: url('/dashed.png');
+    background-size: 88% 74%;
+    background-position: top;
+    height: 103vh;
+    background-repeat: no-repeat;
+}
+
 body {
     background: #221763;
     direction: rtl;
@@ -186,9 +194,10 @@ body {
 .circledashed {
     position: absolute;
     height: 959px;
-    border: 3px dashed white;
-    border-radius: 34%;
+    /* border: 3px dashed white;
+    border-radius: 34%; */
     top: -308px;
+    background: url('/dashed.png');
 }
 
 .subtitle {
@@ -213,8 +222,6 @@ body {
 .playicon {
     height: 109px;
     width: 109px;
-    position: absolute;
-    bottom: 221px;
 }
 
 
@@ -529,7 +536,6 @@ li>a>p {
     .playicon {
         height: 96px;
         width: 96px;
-        bottom: 185px !important;
     }
 
     .first-container {
@@ -614,6 +620,24 @@ li>a>p {
     .details {
         margin-right: 0px;
     }
+
+    .first-section {
+        background-image: url('/dashed.png') !important;
+        background-repeat: repeat;
+        background-size: auto;
+        background-size: 90% 75%;
+        background-position: center;
+        height: 103vh;
+        background-repeat: no-repeat;
+    }
+
+
+    .circledashed {
+        background: none;
+        width: 100%;
+    }
+
+
 }
 
 @gutters: 10%;
