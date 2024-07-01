@@ -243,6 +243,7 @@ body {
 
 .text2-termino {
     font-size: 18px;
+    padding: 0 35px;
 }
 
 .card-img2 {
@@ -662,8 +663,14 @@ li>a>p {
 .slick-slide .slide-content {
     margin: 0;
     margin: 0;
-    padding: 50px 100px;
+    padding: 0
+}
+
+
+.bg-sp {
+    background-color: rgba(255, 255, 255, 0.08) !important;
     border-radius: 20px;
+    margin: 0 50px;
 }
 
 
@@ -690,15 +697,30 @@ li>a>p {
     background-size: cover;
 }
 
-.slick-prev,
-.slick-next {
-    position: absolute;
-    border: none;
-    color: transparent;
-    width: 30px;
-    height: 30px;
+.slick-prev2 {
+    background: url('/viloetarrow.png');
+    background-size: cover;
+    left: 8%;
 }
 
+.slick-next2 {
+    background: url('/viloetarrowright.png');
+    background-size: cover;
+    right: 8%;
+}
+
+.slick-prev,
+.slick-next,
+.slick-prev2,
+.slick-next2 {
+    position: absolute;
+    border: none;
+    width: 60px;
+    height: 60px;
+}
+
+.slick-prev::before,
+.slick-next::before,
 .slick-prev::before,
 .slick-next::before {
     content: '';
@@ -721,9 +743,16 @@ li>a>p {
     border: none;
     padding: 0;
     color: transparent;
-    width: 10px;
-    height: 10px;
-    background-color: #777;
-    margin-right: 10px;
-    border-radius: 50%;
+    width: 30px;
+    height: 2px;
+    background-color: #169BD6;
+    margin-top: 10px;
 }
+
+ .slick-active button{
+    background-color: rgba(255, 255, 255, 0.16) !important;
+}
+
+.slick-dots li button::before {
+    content: '';
+}  
