@@ -504,6 +504,10 @@ li>a>p {
         font-size: 3.6rem;
     }
 
+    .slick-list {
+        padding: 0 !;
+    }
+
     .mulogoz {
         justify-content: center !important;
     }
@@ -646,6 +650,9 @@ li>a>p {
         width: 100%;
     }
 
+    .slick-list {
+        padding: 0 !important;
+    }
 
 }
 
@@ -687,25 +694,11 @@ li>a>p {
     margin: 20px 0px;
 }
 
-.slick-prev {
-    background: url('../../viloetarrow.png');
-    background-size: cover;
-}
-
-.slick-next {
-    background: url('../../viloetarrowright.png');
-    background-size: cover;
-}
-
 .slick-prev2 {
-    background: url('../../viloetarrow.png');
-    background-size: cover;
     left: 8%;
 }
 
 .slick-next2 {
-    background: url('../../viloetarrowright.png');
-    background-size: cover;
     right: 8%;
 }
 
@@ -717,6 +710,7 @@ li>a>p {
     border: none;
     width: 60px;
     height: 60px;
+    z-index: 999;
 }
 
 .slick-prev::before,
@@ -749,10 +743,10 @@ li>a>p {
     margin-top: 10px;
 }
 
- .slick-active button{
+.slick-active button {
     background-color: rgba(255, 255, 255, 0.16) !important;
 }
 
 .slick-dots li button::before {
     content: '';
-}  
+}
