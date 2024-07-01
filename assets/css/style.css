@@ -34,12 +34,18 @@
 }
 
 
+* {
+    font-family: "Tajawal-Regular";
+    box-sizing: border-box;
+}
 
 body {
     background: #221763;
     direction: rtl;
     margin: 0;
     padding: 0;
+    color: #fff;
+    box-sizing: border-box;
 }
 
 .containero {
@@ -101,9 +107,7 @@ body {
 
 /* slick carousel */
 
-* {
-    font-family: "Tajawal-Regular";
-}
+
 
 .navbar {
     z-index: 99;
@@ -364,7 +368,110 @@ button {
     height: 230px;
 }
 
+input,
+select {
+    width: 100%;
+    height: 56px;
+}
 
+textarea {
+    height: 114px;
+    width: 100%;
+}
+
+.feature4 {
+    width: 100%;
+    background: url('/soncolor.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    margin: 150px 0 0 0;
+    position: relative;
+}
+
+.feature4::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(34, 23, 99, 0) 28%, #221763 70%);
+}
+
+
+
+.formila {
+    background-color: rgba(255, 255, 255, 0.12);
+    border-radius: 10px;
+    padding: 35px;
+}
+
+.feature5 {
+    width: 100%;
+    height: 100%;
+    margin: 150px 0;
+}
+
+
+
+.list-item {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.details {
+    display: none;
+    margin-right: 48px;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.details::before {
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #8974EC;
+}
+
+.footer-list::before {
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+li>a>p {
+    color: #fff;
+    font-family: 'Tajawal-Light';
+    font-size: 18px;
+}
+
+.footer-quick {
+    color: #fff;
+    font-family: 'Tajawal-Bold';
+    font-size: 24px;
+}
+
+.feature6 {
+    background: #170F42;
+    padding: 100px 0;
+}
 
 /********** copyright **********/
 #copyright {
@@ -381,8 +488,8 @@ button {
 }
 
 #copyright #social-media a i {
-    color: #192440;
-    font-size: 1.2rem;
+    color: #fff;
+    font-size: 1.5rem;
     line-height: 40px;
 }
 
@@ -403,4 +510,11 @@ button {
     .mulogoz {
         justify-content: center !important;
     }
+}
+
+@media (max-width: 345px) {
+    #navbar{
+        flex-direction: column;
+    }
+  
 }
