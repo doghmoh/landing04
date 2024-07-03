@@ -62,10 +62,12 @@ body {
     height: 575px;
     background: linear-gradient(to top, rgba(75, 53, 180, 0) 0%, #221763 100%);
 }
-.dropdown-menu{
+
+.dropdown-menu {
     background: transparent;
 }
-.dropdown-item{
+
+.dropdown-item {
     color: #F78D2B;
 }
 
@@ -387,7 +389,39 @@ textarea {
     background: linear-gradient(180deg, rgba(34, 23, 99, 0) 28%, #221763 70%);
 }
 
+.nav-tabs .nav-link.active {
+    background-color: transparent;
+    color: #fff;
+    font-family: 'Tajawal-Bold';
+    border: 0;
+}
 
+.nav-link.active::after {
+    background-color: #FFFFFF;
+    margin-right: 5px;
+}
+
+.nav-tabs .nav-link {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.64);
+    font-family: 'Tajawal-Bold';
+    border: 0;
+}
+
+.nav-tabs .nav-link:hover:after {
+    border: 0;
+    background-color: #fff;
+    /* Change to your desired hover color */
+}
+
+.nav-tabs {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.08);
+    padding: 0;
+}
+
+#dawara1-tab:hover {
+    border: 0 !important;
+}
 
 .formila {
     background-color: rgba(255, 255, 255, 0.12);
@@ -542,6 +576,7 @@ div.slick-slide div.slide-content2 {
     border-radius: 20px;
 
 }
+
 .slick-list {
     margin: 20px 0px;
 }
@@ -768,23 +803,19 @@ div.slick-slide div.slide-content2 {
 
 /* Tablette Screen */
 
-@media only screen and (min-width: 601px) and (max-width: 768px) {
-  
-}
+@media only screen and (min-width: 601px) and (max-width: 768px) {}
 
 /*  Desktop Screen  */
 
 @media only screen and (min-width: 769px) {
-   .slick-carousel .slick-slide {
+    .slick-carousel .slick-slide {
         margin: 0 20px;
         background-color: rgba(255, 255, 255, 0.24) !important;
         border-radius: 20px !important;
-    
-        
+
+
     }
 }
 
 /* Hight Resoloution */
-@media only screen and (min-width: 1200px) {
-    
-}
+@media only screen and (min-width: 1200px) {}
