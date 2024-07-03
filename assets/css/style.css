@@ -230,6 +230,7 @@ body {
 .playicon {
     height: 109px;
     width: 109px;
+    cursor: pointer;
 }
 
 
@@ -748,6 +749,10 @@ div.slick-slide div.slide-content2 {
 
     .formila {
         padding: 20px 0;
+    }
+
+    .contact-formula{
+        margin: 30px 0;
     }
 
     .contact-title {
