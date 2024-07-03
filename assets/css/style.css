@@ -40,8 +40,8 @@
 }
 
 .first-section {
-    background: url('../../dashed.png');
-    background-size: 88% 74%;
+    background: url('../image/dashed.png');
+    background-size: 88% 81%;
     background-position: top;
     height: 103vh;
     background-repeat: no-repeat;
@@ -85,8 +85,11 @@ body {
 
 .image-half {
     clip-path: polygon(100% 0, 100% 28%, 0% 45%, 0% 0%);
-    background: linear-gradient(to top, rgba(75, 53, 180, 0), #221763), url('../../laptop.jpg');
+    background: linear-gradient(to top, rgba(75, 53, 180, 0), #221763), url('../image/coding100.jpg');
     background-size: cover;
+    background-size: contain;
+    background-position: top;
+
 }
 
 .color-half {
@@ -103,8 +106,11 @@ body {
 
 .image-half2 {
     clip-path: polygon(100% 58%, 100% 100%, 0% 100%, 0% 73%);
-    background: linear-gradient(to bottom, rgba(75, 53, 180, 0), #221763), url('../../coding.jpg');
+    background: linear-gradient(to bottom, rgba(75, 53, 180, 0), #221763), url('../image/coding102.jpg');
     background-size: cover;
+    background-size: contain;
+    background-position: bottom;
+
 }
 
 .textofhalf {
@@ -167,7 +173,7 @@ body {
 }
 
 .first-container {
-    background-image: url('../../Group 8.png');
+    background-image: url('../image/Group 8.png');
     background-size: cover;
     padding: 0 70px;
     height: 600px;
@@ -178,8 +184,30 @@ body {
     align-items: center;
 }
 
+.shape-content {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: start !important;
+    background: url('../image/bluerect.png');
+    background-size: cover;
+    height: 560px;
+    width: 224px;
+}
+
+.shape-content2 {
+    background: url('../image/grayrect.png');
+    background-size: cover;
+    height: 431px;
+    width: 224px;
+}
+
+.shape-content h4 {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
 .aaa {
-    background-image: url('../..Group 8.png');
+    background-image: url('../image/Group 8.png');
     background-size: cover;
     position: absolute;
     width: 100%;
@@ -189,7 +217,7 @@ body {
 }
 
 .circletoword {
-    background-image: url('../../Group 59465.png');
+    background-image: url('../image/Group 59465.png');
     position: absolute;
     height: 81px;
     width: 200px;
@@ -205,7 +233,7 @@ body {
     /* border: 3px dashed white;
     border-radius: 34%; */
     top: -308px;
-    background: url('../../dashed.png');
+    background: url('../image/dashed.png');
 }
 
 .subtitle {
@@ -310,7 +338,7 @@ div.card-body button:hover {
 
 
 .dawarat {
-    background: url('../../Rectanglecurved.png');
+    background: url('../image/Rectanglecurved.png');
     background-repeat: repeat;
     background-size: auto;
     background-repeat: no-repeat;
@@ -372,7 +400,7 @@ textarea {
 
 .feature4 {
     width: 100%;
-    background: url('../../soncolor.png');
+    background: url('../image/soncolor.png');
     background-repeat: no-repeat;
     background-size: contain;
     height: 100%;
@@ -658,6 +686,7 @@ div.slick-slide div.slide-content2 {
 @media only screen and (max-width: 768px) {
     .shape-content {
         height: 559px !important;
+
     }
 
     .navbar {
@@ -785,10 +814,10 @@ div.slick-slide div.slide-content2 {
     }
 
     .first-section {
-        background-image: url('../../dashed.png') !important;
+        background-image: url('../image/dashed.png') !important;
         background-repeat: repeat;
         background-size: auto;
-        background-size: 90% 75%;
+        background-size: 90% 81%;
         background-position: center;
         height: 103vh;
         background-repeat: no-repeat;
@@ -825,6 +854,7 @@ div.slick-slide div.slide-content2 {
     .nav-item {
         margin: 20px;
     }
+
     .navbar {
         background-color: rgba(1, 23, 71, 0.8) !important;
     }
