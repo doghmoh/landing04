@@ -751,7 +751,7 @@ div.slick-slide div.slide-content2 {
         padding: 20px 0;
     }
 
-    .contact-formula{
+    .contact-formula {
         margin: 30px 0;
     }
 
@@ -817,10 +817,30 @@ div.slick-slide div.slide-content2 {
         margin: 0 20px;
         background-color: rgba(255, 255, 255, 0.24) !important;
         border-radius: 20px !important;
-
-
     }
 }
 
 /* Hight Resoloution */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (max-width: 991px) {
+    .nav-item {
+        margin: 20px;
+    }
+    .navbar {
+        background-color: rgba(1, 23, 71, 0.8) !important;
+    }
+
+    ul,
+    li {
+        margin: 0;
+        padding: 0;
+    }
+
+    #navbar-last {
+        flex-direction: column !important;
+        margin: 20px 0;
+    }
+
+    .signup {
+        margin: 50px 0;
+    }
+}
