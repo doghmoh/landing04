@@ -68,7 +68,7 @@
                         </div>
                     </div>
                     <button class="btn btn-outline-primary d-flex align-items-center justify-content-center signup"
-                        style="background-color:#169BD6;">
+                        onclick="window.open('signin.html')" style="background-color:#169BD6;">
                         <img src="assets/image/userlogin.png" alt="userlogin" width="26" height="26" class="ml-2" />
                         <span class="text-white">إنشاء حساب/ دخـول</span>
                     </button>
@@ -289,7 +289,8 @@
                                 </div>
                                 <div class='d-flex justify-content-around align-items-center w-100 border border-1 border-dark m-1'
                                     style="background: linear-gradient(to top, rgba(75, 53, 180, 0) 0%, #221763 100%);">
-                                    <img class="m-1" src="assets/image/iconVideo.png" style="width: 13px; height:17px ;">
+                                    <img class="m-1" src="assets/image/iconVideo.png"
+                                        style="width: 13px; height:17px ;">
                                     <h4 class="m-1" style="color: #fff;font-size: 16px;">18</h4>
                                 </div>
                                 <div class='d-flex justify-content-around align-items-center w-100 border border-1 border-dark m-1'
@@ -339,7 +340,8 @@
                                 </div>
                                 <div class='d-flex justify-content-around align-items-center w-100 border border-1 border-dark m-1'
                                     style="background: linear-gradient(to top, rgba(75, 53, 180, 0) 0%, #221763 100%);">
-                                    <img class="m-1" src="assets/image/iconVideo.png" style="width: 13px; height:17px ;">
+                                    <img class="m-1" src="assets/image/iconVideo.png"
+                                        style="width: 13px; height:17px ;">
                                     <h4 class="m-1" style="color: #fff;font-size: 16px;">18</h4>
                                 </div>
                                 <div class='d-flex justify-content-around align-items-center w-100 border border-1 border-dark m-1'
@@ -382,6 +384,7 @@
 
     <!-- Feature Section with Skewed Background -->
     <div class="container-fluid dawarat">
+        <div class="loading"><img src="assets/image/loading.gif" width="100" height="100" / > </div>
         <div class="row align-items-center justify-content-center">
             <div class="col-10 col-md-8 col-lg-6">
                 <h2 class="text-center text-white font-weight-bold my-5" style="font-size: 24px; ">
@@ -397,21 +400,17 @@
             <div class="col-11 mt-5">
                 <ul class="nav nav-tabs col-xl-8 col-md-10 col-12" id="myTab" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" id="all-dawarat-tab" data-toggle="tab" href="#all-dawarat" role="tab"
-                            aria-controls="all-dawarat" aria-selected="true">كل الدورات</a>
+                        <a class="nav-link active" id="all-tab">كل الدورات</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="dawara1-tab" data-toggle="tab" href="#dawara1" role="tab"
-                            aria-controls="dawara1" aria-selected="false">دورة الاوتوميشن</a>
+                        <a class="nav-link" id="dawra1-tab">دورة الاوتوميشن</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="dawara2-tab" data-toggle="tab" href="#dawara2" role="tab"
-                            aria-controls="dawara2" aria-selected="false">دورة المانيول</a>
+                        <a class="nav-link" id="dawra2-tab">دورة المانيول</a>
                     </li>
                 </ul>
                 <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="all-dawarat" role="tabpanel"
-                        aria-labelledby="all-dawarat-tab">
+                    <div class="tab-pane fade show active" id="all-dawrat" >
                         <div class="col-12 col-md-12" style="direction: ltr;">
                             <!--Dawarat All-->
                             <div class="slick-carousel">
@@ -513,10 +512,86 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="dawara1" role="tabpanel" aria-labelledby="dawara1-tab">
+                    <div class="tab-pane fade" id="dawra1"  >
                         <div class="col-12 col-md-12" style="direction: ltr;">
                             <!--Dawarat All-->
                             <div class="slick-carousel">
+                                <div class="slide-content2">
+                                    <img class="card-img" src="assets/image/coding102.jpg" alt="vscode" />
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                                        <h1 class="title text-center text-white">عنوان الدورة
+                                        </h1>
+                                        <p class="text text-center text-white m-0">
+                                            إذا كنت ترغب في تعلم اختبار البرمجيات يدويًا من الصفر، أو تغيير مسار عملك
+                                            والدخول
+                                            إلى
+                                            مجال
+                                            اختبار البرمجيات، فإن هذا المعسكر التدريبي هو لك. ستتعلم خلال المعسكر . . .
+                                        </p>
+                                        <button
+                                            class="btn d-flex align-items-center justify-content-between text-white">
+                                            <span>اعرف المزيد</span>
+                                            <img src="assets/image/svg/arrowOr.svg" alt="" width="20">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="slide-content2">
+                                    <img class="card-img" src="assets/image/coding.jpg" alt="vscode" />
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                                        <h1 class="title text-center text-white">عنوان الدورة
+                                        </h1>
+                                        <p class="text text-center text-white m-0">
+                                            إذا كنت ترغب في تعلم اختبار البرمجيات يدويًا من الصفر، أو تغيير مسار عملك
+                                            والدخول
+                                            إلى
+                                            مجال
+                                            اختبار البرمجيات، فإن هذا المعسكر التدريبي هو لك. ستتعلم خلال المعسكر . . .
+                                        </p>
+                                        <button
+                                            class="btn d-flex align-items-center justify-content-between text-white">
+                                            <span>اعرف المزيد</span>
+                                            <img src="assets/image/svg/arrowOr.svg" alt="" width="20">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="slide-content2">
+                                    <img class="card-img" src="assets/image/coding_languages.webp" alt="vscode" />
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                                        <h1 class="title text-center text-white">عنوان الدورة
+                                        </h1>
+                                        <p class="text text-center text-white m-0">
+                                            إذا كنت ترغب في تعلم اختبار البرمجيات يدويًا من الصفر، أو تغيير مسار عملك
+                                            والدخول
+                                            إلى
+                                            مجال
+                                            اختبار البرمجيات، فإن هذا المعسكر التدريبي هو لك. ستتعلم خلال المعسكر . . .
+                                        </p>
+                                        <button
+                                            class="btn d-flex align-items-center justify-content-between text-white">
+                                            <span>اعرف المزيد</span>
+                                            <img src="assets/image/svg/arrowOr.svg" alt="" width="20">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="slide-content2">
+                                    <img class="card-img" src="assets/image/dawra2.png" alt="vscode" />
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                                        <h1 class="title text-center text-white">عنوان الدورة
+                                        </h1>
+                                        <p class="text text-center text-white m-0">
+                                            إذا كنت ترغب في تعلم اختبار البرمجيات يدويًا من الصفر، أو تغيير مسار عملك
+                                            والدخول
+                                            إلى
+                                            مجال
+                                            اختبار البرمجيات، فإن هذا المعسكر التدريبي هو لك. ستتعلم خلال المعسكر . . .
+                                        </p>
+                                        <button
+                                            class="btn d-flex align-items-center justify-content-between text-white">
+                                            <span>اعرف المزيد</span>
+                                            <img src="assets/image/svg/arrowOr.svg" alt="" width="20">
+                                        </button>
+                                    </div>
+                                </div>
                                 <div class="slide-content2">
                                     <img class="card-img" src="assets/image/coding100.jpg" alt="vscode" />
                                     <div class="card-body d-flex flex-column align-items-center justify-content-center">
@@ -539,12 +614,88 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="dawara2" role="tabpanel" aria-labelledby="dawara2-tab">
-                        <div class="col-12` col-md-12" style="direction: ltr;">
+                    <div class="tab-pane fade" id="dawra2" >
+                        <div class="col-12 col-md-12" style="direction: ltr;">
                             <!--Dawarat All-->
                             <div class="slick-carousel">
                                 <div class="slide-content2">
-                                    <img class="card-img" src="assets/image/code23.jpg" alt="vscode" />
+                                    <img class="card-img" src="assets/image/coding102.jpg" alt="vscode" />
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                                        <h1 class="title text-center text-white">عنوان الدورة
+                                        </h1>
+                                        <p class="text text-center text-white m-0">
+                                            إذا كنت ترغب في تعلم اختبار البرمجيات يدويًا من الصفر، أو تغيير مسار عملك
+                                            والدخول
+                                            إلى
+                                            مجال
+                                            اختبار البرمجيات، فإن هذا المعسكر التدريبي هو لك. ستتعلم خلال المعسكر . . .
+                                        </p>
+                                        <button
+                                            class="btn d-flex align-items-center justify-content-between text-white">
+                                            <span>اعرف المزيد</span>
+                                            <img src="assets/image/svg/arrowOr.svg" alt="" width="20">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="slide-content2">
+                                    <img class="card-img" src="assets/image/coding.jpg" alt="vscode" />
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                                        <h1 class="title text-center text-white">عنوان الدورة
+                                        </h1>
+                                        <p class="text text-center text-white m-0">
+                                            إذا كنت ترغب في تعلم اختبار البرمجيات يدويًا من الصفر، أو تغيير مسار عملك
+                                            والدخول
+                                            إلى
+                                            مجال
+                                            اختبار البرمجيات، فإن هذا المعسكر التدريبي هو لك. ستتعلم خلال المعسكر . . .
+                                        </p>
+                                        <button
+                                            class="btn d-flex align-items-center justify-content-between text-white">
+                                            <span>اعرف المزيد</span>
+                                            <img src="assets/image/svg/arrowOr.svg" alt="" width="20">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="slide-content2">
+                                    <img class="card-img" src="assets/image/coding_languages.webp" alt="vscode" />
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                                        <h1 class="title text-center text-white">عنوان الدورة
+                                        </h1>
+                                        <p class="text text-center text-white m-0">
+                                            إذا كنت ترغب في تعلم اختبار البرمجيات يدويًا من الصفر، أو تغيير مسار عملك
+                                            والدخول
+                                            إلى
+                                            مجال
+                                            اختبار البرمجيات، فإن هذا المعسكر التدريبي هو لك. ستتعلم خلال المعسكر . . .
+                                        </p>
+                                        <button
+                                            class="btn d-flex align-items-center justify-content-between text-white">
+                                            <span>اعرف المزيد</span>
+                                            <img src="assets/image/svg/arrowOr.svg" alt="" width="20">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="slide-content2">
+                                    <img class="card-img" src="assets/image/dawra2.png" alt="vscode" />
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                                        <h1 class="title text-center text-white">عنوان الدورة
+                                        </h1>
+                                        <p class="text text-center text-white m-0">
+                                            إذا كنت ترغب في تعلم اختبار البرمجيات يدويًا من الصفر، أو تغيير مسار عملك
+                                            والدخول
+                                            إلى
+                                            مجال
+                                            اختبار البرمجيات، فإن هذا المعسكر التدريبي هو لك. ستتعلم خلال المعسكر . . .
+                                        </p>
+                                        <button
+                                            class="btn d-flex align-items-center justify-content-between text-white">
+                                            <span>اعرف المزيد</span>
+                                            <img src="assets/image/svg/arrowOr.svg" alt="" width="20">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="slide-content2">
+                                    <img class="card-img" src="assets/image/coding100.jpg" alt="vscode" />
                                     <div class="card-body d-flex flex-column align-items-center justify-content-center">
                                         <h1 class="title text-center text-white">عنوان الدورة
                                         </h1>
@@ -619,7 +770,7 @@
     </div>
 
 
-    <!-- feature4-->
+    <!-- feature4  photo+ definition -->
     <div class="row align-items-center justify-content-center feature4 ">
         <div class="col-md-10 col-xl-10">
             <div class="row">
@@ -779,7 +930,8 @@
                         <ul>
                             <li class="my-2">
                                 <div class="list-item">
-                                    <img class="icon plus-icon" src="assets/image/svg/plus.svg" alt="plus" style="display: none;">
+                                    <img class="icon plus-icon" src="assets/image/svg/plus.svg" alt="plus"
+                                        style="display: none;">
                                     <img class="icon minus-icon" src="assets/image/svg/minus.svg" alt="minus">
                                     <span style="font-family: 'Tajawal-Medium';
                                     font-size: 24px; color:#fff;
@@ -799,7 +951,8 @@
                             <li class="my-2">
                                 <div class="list-item">
                                     <img class="icon plus-icon" src="assets/image/svg/plus.svg" alt="plus">
-                                    <img class="icon minus-icon" src="assets/image/svg/minus.svg" alt="minus" style="display: none;">
+                                    <img class="icon minus-icon" src="assets/image/svg/minus.svg" alt="minus"
+                                        style="display: none;">
                                     <span style="font-family: 'Tajawal-Medium';
                                     font-size: 24px; color:#fff;
                                      text-align: right;" class="m-0 mr-4">هل توفرون التدريب للشركات في الموقع؟</span>
@@ -818,7 +971,8 @@
                             <li class="my-2">
                                 <div class="list-item">
                                     <img class="icon plus-icon" src="assets/image/svg/plus.svg" alt="plus">
-                                    <img class="icon minus-icon" src="assets/image/svg/minus.svg" alt="minus" style="display: none;">
+                                    <img class="icon minus-icon" src="assets/image/svg/minus.svg" alt="minus"
+                                        style="display: none;">
                                     <span style="font-family: 'Tajawal-Medium';
                                     font-size: 24px; color:#fff;
                                      text-align: right;" class="m-0 mr-4">هل تقدمون دورات خاصة عبر الإنترنت وجهًا
@@ -838,7 +992,8 @@
                             <li class="mb-2">
                                 <div class="list-item">
                                     <img class="icon plus-icon" src="assets/image/svg/plus.svg" alt="plus">
-                                    <img class="icon minus-icon" src="assets/image/svg/minus.svg" alt="minus" style="display: none;">
+                                    <img class="icon minus-icon" src="assets/image/svg/minus.svg" alt="minus"
+                                        style="display: none;">
                                     <span style="font-family: 'Tajawal-Medium';
                                     font-size: 24px; color:#fff;
                                      text-align: right;" class="m-0 mr-4">
@@ -860,7 +1015,8 @@
                             <li class="my-2">
                                 <div class="list-item">
                                     <img class="icon plus-icon" src="assets/image/svg/plus.svg" alt="plus">
-                                    <img class="icon minus-icon" src="assets/image/svg/minus.svg" alt="minus" style="display: none;">
+                                    <img class="icon minus-icon" src="assets/image/svg/minus.svg" alt="minus"
+                                        style="display: none;">
                                     <span style="font-family: 'Tajawal-Medium';
                                     font-size: 24px; color:#fff;
                                      text-align: right;" class="m-0 mr-4">
@@ -885,7 +1041,7 @@
         </div>
     </div>
 
-    <!-- feature7-->
+    <!-- feature7 footer-->
     <div class="row align-items-center justify-content-center feature6">
         <div class="col-10">
             <div class="row align-items-center justify-content-center ">
@@ -1024,6 +1180,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         $(document).ready(function () {
+            $('.loading').hide()
             AOS.init({
             });
             $('.nav-link').on('click', function () {
@@ -1146,6 +1303,24 @@
             //     }
             //     e.preventDefault();
             // });
+
+            $('#all-tab').on('click', function () {
+                $('#dawra1').removeClass('show active')
+                $('#dawra2').removeClass('show active')
+                $('#all-dawrat').addClass('show active')
+            });
+
+            $('#dawra1-tab').on('click', function () {
+                $('#all-dawrat').removeClass('show active')
+                $('#dawra2').removeClass('show active')
+                $('#dawra1').addClass('show active')
+            });
+
+            $('#dawra2-tab').on('click', function () {
+                $('#all-dawrat').removeClass('show active')
+                $('#dawra1').removeClass('show active')
+                $('#dawra2').addClass('show active')
+            });
 
 
             $('.list-item').click(function () {

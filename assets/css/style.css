@@ -33,6 +33,18 @@
     font-style: normal;
 }
 
+.loading {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #6c6c6cb5;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
 
 * {
     font-family: "Tajawal-Regular";
@@ -41,7 +53,7 @@
 
 .first-section {
     background: url('../image/dashed.png');
-    background-size: 88% 81%;
+    background-size: 88% 73%;
     background-position: top;
     height: 103vh;
     background-repeat: no-repeat;
@@ -133,6 +145,11 @@ body {
     width: 100%;
     height: 899px;
     margin: 0;
+}
+
+.card-img10 {
+    width: 258px;
+    height: 50px;
 }
 
 
@@ -417,9 +434,11 @@ textarea {
     height: 100%;
     background: linear-gradient(180deg, rgba(34, 23, 99, 0) 28%, #221763 70%);
 }
-.subscribe-title{
+
+.subscribe-title {
     position: relative;
 }
+
 .subscribe-title::before {
     content: '';
     width: 154px;
@@ -428,7 +447,7 @@ textarea {
     position: absolute;
     bottom: 0;
     right: 0;
-  }
+}
 
 .nav-tabs .nav-link.active {
     background-color: transparent;
@@ -466,19 +485,21 @@ textarea {
 }
 
 
-.subscribechoice{
-    border:1px solid rgba(255, 255, 255, 0.32);
+.subscribechoice {
+    border: 1px solid rgba(255, 255, 255, 0.32);
     border-radius: 10px;
     width: fit-content;
     padding: 4px;
     width: 464px;
 }
 
-#subscribe-tab, #subscribe-tab2{
+#subscribe-tab,
+#subscribe-tab2 {
     border-radius: 10px;
     margin: 0;
     text-align: center;
 }
+
 .nav-tabs #subscribe-tab.active,
 .nav-tabs #subscribe-tab2.active {
     background-color: #fff;
@@ -487,8 +508,9 @@ textarea {
     border: 0;
     width: 100%;
 }
+
 .nav-tabs #subscribe-tab.active::after,
-.nav-tabs #subscribe-tab.active::after{
+.nav-tabs #subscribe-tab.active::after {
     border: 0;
 }
 
@@ -498,6 +520,7 @@ textarea {
     background-color: transparent;
     width: 0;
 }
+
 .formila {
     background-color: rgba(255, 255, 255, 0.12);
     border-radius: 10px;
@@ -662,6 +685,14 @@ div.slick-slide div.slide-content2 {
 
 .slick-next2 {
     right: 8%;
+}
+
+.bg-slider {
+    background: linear-gradient(to bottom left, #ffffff4f 0%, transparent 100%);
+}
+
+.m-section {
+    margin: 150px 0;
 }
 
 .slick-prev,

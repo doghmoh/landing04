@@ -41,19 +41,19 @@
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link text-white active" href="#">الصفحة الرئيسية</a>
+                        <a class="nav-link text-white" href="index.html">الصفحة الرئيسية</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">المسارات</a>
+                        <a class="nav-link text-white" href="masarat.html">المسارات</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">الدورات</a>
+                        <a class="nav-link text-white" href="dawarat.html">الدورات</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">الإشتراكات</a>
+                        <a class="nav-link text-white active" href="subscrib.html">الإشتراكات</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">الشراكات</a>
+                        <a class="nav-link text-white" href="partner.html">الشراكات</a>
                     </li>
                 </ul>
 
@@ -185,7 +185,7 @@
                     </div>
                 </div>
             </div>
-            <div class="fade row align-items-center justify-content-center" id="subscribe2" role="tabpanel"
+            <div class="fade row align-items-center justify-content-center" id="subscribe2" role="tabpanel" hidden
                 aria-labelledby="subscribe-tab">
                 <div class="col-md-10">
                     <div class="row align-items-center justify-content-center">
@@ -217,7 +217,7 @@
                                 <div class="row">
                                     <button class="btn d-flex align-items-center justify-content-between text-white"
                                         style="border-radius: 30px; width: 223px; height: 56px; background: linear-gradient(to right, #F78D2B 0%, #6D56DC 100%);"
-                                        type="button">
+                                        type="button" id="indvidual-bottom1">
                                         <span>اشتراك</span>
                                         <img src="assets/image/arrowleft.png" alt="" width="24">
                                     </button>
@@ -254,7 +254,7 @@
                                 </div>
                                 <button class="btn d-flex align-items-center justify-content-between text-white"
                                     style="border-radius: 30px; width: 223px; height: 56px; background: linear-gradient(to right, #F78D2B 0%, #6D56DC 100%);"
-                                    type="button">
+                                    type="button" id="indvidual-bottom2">
                                     <span>اشتراك</span>
                                     <img src="assets/image/arrowleft.png" alt="" width="24">
                                 </button>
@@ -265,12 +265,12 @@
             </div>
         </div>
 
-        <div class="row align-items-center justify-content-center mt-5" id="subscribe-company" hidden>
+        <div class="col-10 mt-5" id="subscribe-company" style="height: 49vh;" hidden>
             <h4 class="mb-5 text-right subscribe-title"
                 style="color: #fff; font-size: 40px; font-family: 'Tajawal-Bold'; ">
                 عن اشتراك الشركات
             </h4>
-            <p class="text-white" style="font-size: 16px; text-align: right; height: 156px;">
+            <p class="text-white" style="font-size: 16px; text-align: right; ">
                 بالنسبة للاشتراكات، نقدم باقات خاصة للشركات التي تضم 5 موظفين أو أكثر، تتيح الوصول إلى معسكراتنا بأسعار
                 جذابة. لمزيد من المعلومات والتفاصيل حول هذه الباقات الإشتراك، يرجى ملء النموذج أدناه
             </p>
@@ -284,12 +284,12 @@
             </div>
         </div>
 
-        <div class="row align-items-center justify-content-center mt-5" id="subscribe-individual" hidden>
+        <div class="col-10 mt-5" id="subscribe-individual" style="height: 49vh;" hidden>
             <h4 class="mb-5 text-right subscribe-title"
                 style="color: #fff; font-size: 40px; font-family: 'Tajawal-Bold'; ">
                 عن اشتراك الافراد
             </h4>
-            <p class="text-white" style="font-size: 16px; text-align: right; height: 156px;">
+            <p class="text-white" style="font-size: 16px; text-align: right;">
                 بالنسبة للاشتراكات، نقدم باقات خاصة للافراد تتيح الوصول إلى معسكراتنا بأسعار
                 جذابة. لمزيد من المعلومات والتفاصيل حول هذه الباقات الإشتراك، يرجى ملء النموذج أدناه
             </p>
@@ -611,17 +611,40 @@
                 $plusIcon.toggle();
                 $minusIcon.toggle();
             });
-            $(document).ready(function () {
-                $('#subscribe-tab').on('click', function () {
-                    $('#subscribe2').removeClass('show active').attr('hidden', 'true');
-                    $('#subscribe').addClass('show active').removeAttr('hidden');
-                });
-
-                $('#subscribe-tab2').on('click', function () {
-                    $('#subscribe').removeClass('show active').attr('hidden', 'true');
-                    $('#subscribe2').addClass('show active').removeAttr('hidden');
-                });
+            $('#subscribe-tab').on('click', function () {
+                $('#subscribe2').removeClass('show active').attr('hidden', 'true');
+                $('#subscribe').addClass('show active').removeAttr('hidden');
             });
+
+            $('#subscribe-tab2').on('click', function () {
+                $('#subscribe').removeClass('show active').attr('hidden', 'true');
+                $('#subscribe2').addClass('show active').removeAttr('hidden');
+            });
+
+            $('#company-bottom1').on('click', function () {
+                $('#myTabContent').attr('hidden', 'true');
+                $('#subscribe-company').removeAttr('hidden');
+                $('#subscribe-individual').attr('hidden', 'true');
+            });
+
+            $('#company-bottom2').on('click', function () {
+                $('#myTabContent').attr('hidden', 'true');
+                $('#subscribe-individual').removeAttr('hidden');
+                $('#subscribe-company').attr('hidden', 'true');
+            });
+
+            $('#indvidual-bottom1').on('click', function () {
+                $('#myTabContent').attr('hidden', 'true');
+                $('#subscribe-individual').removeAttr('hidden');
+                $('#subscribe-company').attr('hidden', 'true');
+            });
+
+            $('#indvidual-bottom2').on('click', function () {
+                $('#myTabContent').attr('hidden', 'true');
+                $('#subscribe-company').removeAttr('hidden');
+                $('#subscribe-individual').attr('hidden', 'true');
+            });
+
 
         });
     </script>

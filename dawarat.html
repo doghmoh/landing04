@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New World Project Q-Cart</title>
+    <!--logo-->
+    <link rel="icon" href="assets/image/logo.png" sizes="32x32" type="image/png">
+    <!-- bootstrap.min.css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Slick-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.0/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.0/slick-theme.css" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- custome style-->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light justify-content-center container-fluid"
+        style="background-color: rgba(1, 23, 71, 0.16); position:fixed; width: 100%;">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/image/logo.png" alt="Logo" class="img-fluid" style="height: 59px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+                aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars fa-2x text-white"> </i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html">الصفحة الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="masarat.html">المسارات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white active" href="dawarat.html">الدورات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="subscrib.html">الإشتراكات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="partner.html">الشراكات</a>
+                    </li>
+                </ul>
+
+                <div class="d-flex align-items-center" id="navbar-last">
+                    <div class="dropdown mx-2">
+                        <button
+                            class="btn btn-outline-secondary dropdown-toggle d-flex flex-row-reverse align-items-center justify-content-center"
+                            type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false" style="border: 1px solid #F78D2B; color: #F78D2B;">
+                            EN
+                        </button>
+                        <div class="dropdown-menu  border border-1 bg-none border-warning"
+                            aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">EN</a>
+                            <a class="dropdown-item" href="#">ES</a>
+                            <a class="dropdown-item" href="#">FR</a>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline-primary d-flex align-items-center justify-content-center signup"
+                        style="background-color:#169BD6;">
+                        <img src="assets/image/userlogin.png" alt="userlogin" width="26" height="26" class="ml-2" />
+                        <span class="text-white">إنشاء حساب/ دخـول</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="row align-items-center justify-content-center">
+        <div class="col-12 col-md-10 col-xl-10 first-container">
+            <div class="w-50">
+                <h1 data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true"
+                    class="text-white text-center font-weight-bold" style="margin-top: 150px; font-size:50px">
+                    <span style="font-family: Tajawal-Bold;">دورات </span>
+                    <span style="position: relative;">
+                        <span class="circletoword"></span>
+                        <span style="font-family: Tajawal-Bold;margin-top: 10px;">مُحدثـــة</span>
+                    </span>
+                </h1>
+            </div>
+            <div class="w-75">
+                <p data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true"
+                    class="lead text-white text-center my-4 subtitle">
+                    اشترك في دوراتنا التي تغطي العديد من المواضيع المختارة بعناية. ستجدون مقاطع فيديو تعليمية، اختبارات
+                    لتقييم معرفتكم، مهام تفاعلية! وأفضل جزء؟ ستحصلون على شهادة معتمدة تؤكد إتمامكم للدورة، تعزز من قيمة
+                    سيرتكم الذاتية وتفتح لكم أبواب الفرص المهنية.
+                </p>
+            </div>
+            <button class="btn d-flex align-items-center justify-content-between text-white my-5"
+                style="width: 228px; height: 56;border-radius: 30px; z-index: 1;background: linear-gradient(to right, #F78D2B 0%, #6D56DC 100%);"
+                type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span>اختــــــر دوره</span>
+                <img src="assets/image/arrowleft.png" alt="" width="24">
+            </button>
+        </div>
+    </div>
+
+
+
+    <!-- feature (skew background) -->
+    <div class="row align-items-center justify-content-center py-2" style="height: 150vh;">
+        <img src="assets/image/corvedcover.png" style="width: 100%;height: 64vh; position: absolute;">
+        <img src="assets/image/cover400.png" style="width: 100%;height: 15vh; position: absolute;">
+        <div class="col-md-10 col-10">
+            <h2 class="text-center text-white font-weight-bold my-5" style="font-size: 40px;">
+                مميزاتنــــــــا
+            </h2>
+        </div>
+        <div class="row align-items-center justify-content-center">
+            <div class="col-10 col-md-4 text-center" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" data-aos-once="true">
+                <div class="d-flex flex-column justify-content-center align-items-start px-3" style="height: 431px;width: 224px;">
+                    <h4 class="my-3 text-right" style="color: #fff;font-size: 24px;font-family:'Tajawal-Bold'">المحتوى التفاعلي</h4>
+                    <p class="text-white text-right" style="font-size: 18px;font-family:'Tajawal-Light'">
+                        سوف تتعلم باستخدام الفيديوهات المتحركة، ثم تجيب على الاختبارات، وبعد ذلك تطبق معرفتك في المهام.
+                    </p>
+                </div>
+            </div>
+            <div class="col-10 col-md-4 text-center" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" data-aos-once="true">
+                <div class="d-flex flex-column justify-content-center align-items-start px-3" style="height: 431px;width: 224px;">
+                    <h4 class="my-3 text-right" style="color: #fff;font-size: 24px;font-family:'Tajawal-Bold'">شهاده معتمده</h4>
+                    <p class="text-white text-right" style="font-size: 18px;font-family:'Tajawal-Light'">
+                        ستحصل على شهادة معتمده في نهاية الدورة التدريبية المكثفة.
+                    </p>
+                </div>
+            </div>
+            <div class="col-10 col-md-4 text-center" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" data-aos-once="true">
+                <div class="d-flex flex-column justify-content-center align-items-start px-3" style="height: 431px;width: 224px;">
+                    <h4 class="my-3 text-right" style="color: #fff;font-size: 24px;font-family:'Tajawal-Bold'">مده زمنيه كافيه</h4>
+                    <p class="text-white text-right" style="font-size: 18px;font-family:'Tajawal-Light'">
+                        ستتمكن من الوصول إلى الدورة لمدة عام كامل، ابتداءً من يوم اشتراكك.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+    <!-- Feature Section with Skewed Background -->
+    <div class="container-fluid dawarat">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-10 col-md-8 col-lg-6">
+                <h2 class="text-center text-white font-weight-bold my-5" style="font-size: 24px; ">
+                    الدورات</h2>
+                <p class="text-white text-center " style="font-size: 16px;">
+                    نقدم في QACard تجربة تدريبية استثنائية تمتاز بجودة عالية ومحتوى متخصص يغطي جميع جوانب اختبار
+                    البرمجيات
+                    وضمان الجودة. يتيح لك برامجنا التدريبية الوصول إلى خبراء مجال البرمجة واختبار البرمجيات، مما
+                    يضمن
+                    تعلمًا
+                    فعالًا وتحقيق نتائج ملموسة في مجال عملك.
+                </p>
+            </div>
+            <div class="col-11 mt-5">
+                <ul class="nav nav-tabs col-xl-8 col-md-10 col-12" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="all-dawarat-tab" data-toggle="tab" href="#all-dawarat" role="tab"
+                            aria-controls="all-dawarat" aria-selected="true">كل الدورات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="dawara1-tab" data-toggle="tab" href="#dawara1" role="tab"
+                            aria-controls="dawara1" aria-selected="false">دورة الاوتوميشن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="dawara2-tab" data-toggle="tab" href="#dawara2" role="tab"
+                            aria-controls="dawara2" aria-selected="false">دورة المانيول</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="all-dawarat" role="tabpanel"
+                        aria-labelledby="all-dawarat-tab">
+                        <div class="col-12 col-md-12" style="direction: ltr;">
+                            <!--Dawarat All-->
+                            <div class="slick-carousel">
+                                <div class="slide-content2">
+                                    <img class="card-img" src="assets/image/coding102.jpg" alt="vscode" />
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                                        <h1 class="title text-center text-white">عنوان الدورة
+                                        </h1>
+                                        <p class="text text-center text-white m-0">
+                                            إذا كنت ترغب في تعلم اختبار البرمجيات يدويًا من الصفر، أو تغيير مسار
+                                            عملك
+                                            والدخول
+                                            إلى
+                                            مجال
+                                            اختبار البرمجيات، فإن هذا المعسكر التدريبي هو لك. ستتعلم خلال المعسكر .
+                                            . .
+                                        </p>
+                                        <button
+                                            class="btn d-flex align-items-center justify-content-between text-white">
+                                            <span>اعرف المزيد</span>
+                                            <img src="assets/image/svg/arrowOr.svg" alt="" width="20">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="slide-content2">
+                                    <img class="card-img" src="assets/image/coding.jpg" alt="vscode" />
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                                        <h1 class="title text-center text-white">عنوان الدورة
+                                        </h1>
+                                        <p class="text text-center text-white m-0">
+                                            إذا كنت ترغب في تعلم اختبار البرمجيات يدويًا من الصفر، أو تغيير مسار
+                                            عملك
+                                            والدخول
+                                            إلى
+                                            مجال
+                                            اختبار البرمجيات، فإن هذا المعسكر التدريبي هو لك. ستتعلم خلال المعسكر .
+                                            . .
+                                        </p>
+                                        <button
+                                            class="btn d-flex align-items-center justify-content-between text-white">
+                                            <span>اعرف المزيد</span>
+                                            <img src="assets/image/svg/arrowOr.svg" alt="" width="20">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="slide-content2">
+                                    <img class="card-img" src="assets/image/coding_languages.webp" alt="vscode" />
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                                        <h1 class="title text-center text-white">عنوان الدورة
+                                        </h1>
+                                        <p class="text text-center text-white m-0">
+                                            إذا كنت ترغب في تعلم اختبار البرمجيات يدويًا من الصفر، أو تغيير مسار
+                                            عملك
+                                            والدخول
+                                            إلى
+                                            مجال
+                                            اختبار البرمجيات، فإن هذا المعسكر التدريبي هو لك. ستتعلم خلال المعسكر .
+                                            . .
+                                        </p>
+                                        <button
+                                            class="btn d-flex align-items-center justify-content-between text-white">
+                                            <span>اعرف المزيد</span>
+                                            <img src="assets/image/svg/arrowOr.svg" alt="" width="20">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="slide-content2">
+                                    <img class="card-img" src="assets/image/dawra2.png" alt="vscode" />
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                                        <h1 class="title text-center text-white">عنوان الدورة
+                                        </h1>
+                                        <p class="text text-center text-white m-0">
+                                            إذا كنت ترغب في تعلم اختبار البرمجيات يدويًا من الصفر، أو تغيير مسار
+                                            عملك
+                                            والدخول
+                                            إلى
+                                            مجال
+                                            اختبار البرمجيات، فإن هذا المعسكر التدريبي هو لك. ستتعلم خلال المعسكر .
+                                            . .
+                                        </p>
+                                        <button
+                                            class="btn d-flex align-items-center justify-content-between text-white">
+                                            <span>اعرف المزيد</span>
+                                            <img src="assets/image/svg/arrowOr.svg" alt="" width="20">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="slide-content2">
+                                    <img class="card-img" src="assets/image/coding100.jpg" alt="vscode" />
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                                        <h1 class="title text-center text-white">عنوان الدورة
+                                        </h1>
+                                        <p class="text text-center text-white m-0">
+                                            إذا كنت ترغب في تعلم اختبار البرمجيات يدويًا من الصفر، أو تغيير مسار
+                                            عملك
+                                            والدخول
+                                            إلى
+                                            مجال
+                                            اختبار البرمجيات، فإن هذا المعسكر التدريبي هو لك. ستتعلم خلال المعسكر .
+                                            . .
+                                        </p>
+                                        <button
+                                            class="btn d-flex align-items-center justify-content-between text-white">
+                                            <span>اعرف المزيد</span>
+                                            <img src="assets/image/svg/arrowOr.svg" alt="" width="20">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="dawara1" role="tabpanel" aria-labelledby="dawara1-tab">
+                        <div class="col-12 col-md-12" style="direction: ltr;">
+                            <!--Dawarat All-->
+                            <div class="slick-carousel">
+                                <div class="slide-content2">
+                                    <img class="card-img" src="assets/image/coding100.jpg" alt="vscode" />
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                                        <h1 class="title text-center text-white">عنوان الدورة
+                                        </h1>
+                                        <p class="text text-center text-white m-0">
+                                            إذا كنت ترغب في تعلم اختبار البرمجيات يدويًا من الصفر، أو تغيير مسار
+                                            عملك
+                                            والدخول
+                                            إلى
+                                            مجال
+                                            اختبار البرمجيات، فإن هذا المعسكر التدريبي هو لك. ستتعلم خلال المعسكر .
+                                            . .
+                                        </p>
+                                        <button
+                                            class="btn d-flex align-items-center justify-content-between text-white">
+                                            <span>اعرف المزيد</span>
+                                            <img src="assets/image/svg/arrowOr.svg" alt="" width="20">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="dawara2" role="tabpanel" aria-labelledby="dawara2-tab">
+                        <div class="col-12` col-md-12" style="direction: ltr;">
+                            <!--Dawarat All-->
+                            <div class="slick-carousel">
+                                <div class="slide-content2">
+                                    <img class="card-img" src="assets/image/code23.jpg" alt="vscode" />
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                                        <h1 class="title text-center text-white">عنوان الدورة
+                                        </h1>
+                                        <p class="text text-center text-white m-0">
+                                            إذا كنت ترغب في تعلم اختبار البرمجيات يدويًا من الصفر، أو تغيير مسار
+                                            عملك
+                                            والدخول
+                                            إلى
+                                            مجال
+                                            اختبار البرمجيات، فإن هذا المعسكر التدريبي هو لك. ستتعلم خلال المعسكر .
+                                            . .
+                                        </p>
+                                        <button
+                                            class="btn d-flex align-items-center justify-content-between text-white">
+                                            <span>اعرف المزيد</span>
+                                            <img src="assets/image/svg/arrowOr.svg" alt="" width="20">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- feature4 ostad definition-->
+    <div class="row align-items-center justify-content-center feature4 ">
+        <div class="col-md-10 col-xl-10">
+            <div class="row">
+                <div class="col-md-10 col-xl-8 ">
+                    <p
+                        style="margin:0;text-align: right; color: #8974EC; font-size: 32px; font-family: 'Tajawal-Bold';">
+                        تعلم من
+                        الخبراء</p>
+                    <h1 style="text-align: right; color: #fff; font-size: 60px;  font-family: 'Tajawal-ExtraBold';">
+                        حاتم
+                        حتاملة</h1>
+                    <p style="text-align: right; color: #fff; font-size: 24px; font-family: 'Tajawal-Regular';">
+                        أنا مهندس الاختبارات البرمجية، ذو خبرة متميزة واسعة تفوق الـ 15 عامًا، اكتسبت خلالها
+                        مهارات
+                        استثنائية في
+                        هذا المجال. خلال مسيرتي المهنية الحافلة، تشرفت بالعمل إلى جانب شركات رائدة عالميًا،
+                        وأسهمت
+                        في
+                        تعزيز
+                        كفاءتها التقنية. لقد توليت أيضًا مهمة تقديم دورات تدريبية متقدمة لمجموعة من الشركات
+                        بارزة في
+                        هولندا
+                        والعالم العربي. أتقن تصميم وتنفيذ أطر عمل لأتمتة الاختبارات تتسم بالقوة والفعالية، مما
+                        يساعد
+                        الشركات
+                        على
+                        بلوغ أعلى درجات الأداء المتميز في مشاريعها التقنية. إذا كنت تبحث عن خبرة لا تضاهى لدعم
+                        وإثراء
+                        مشروعك
+                        الحالي، فأنا هنا لألبي احتياجاتك وأحقق تطلعاتك. أنا متحمس دومًا للتعليم ونقل المعرفة،
+                        ولديّ
+                        أهداف
+                        طموحة
+                        تتمثل في تخطّي طلابي لإنجازاتي نفسها. بقوة الإيمان بأهمية توظيف منهج منظم ومحكم في
+                        دوراتي،
+                        أحرص
+                        على
+                        تقديم محتوى تعليمي عملي وشامل يُساعد على سد الفجوات العلمية وتعزيز الكفاءات."</p>
+                    <div style="margin: 60px 0; width: fit-content;display: flex;
+                    justify-content: center;
+                    align-items: center;
+                  ">
+                        <span class="text-white">تابعني على</span>
+                        <a href="#"> <img src="assets/image/linkdin.png" style="width: 48px; height: 48px; margin-right: 
+                        10px;" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- feature6 Question-->
+    <div class="row align-items-center justify-content-center feature5">
+        <div class="col-12 col-md-10">
+            <div class="row">
+                <div class="col-md-12 col-xl-6">
+                    <div class="col-md-11 ">
+                        <p style="font-family: 'Tajawal-Medium';
+                        font-size: 32px; color:#8974EC;
+                         text-align: right;">
+                            اجـــابـــات على
+                        </p>
+                        <p style="font-family: 'Tajawal-Bold';
+                        font-size: 60px; color:#fff;
+                         text-align: right;">
+                            الاسئلة الأكثر
+                            شيوعاً
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-12 col-xl-6">
+                    <div class="col-md-11">
+                        <ul>
+                            <li class="my-2">
+                                <div class="list-item">
+                                    <img class="icon plus-icon" src="assets/image/svg/plus.svg" alt="plus"
+                                        style="display: none;">
+                                    <img class="icon minus-icon" src="assets/image/svg/minus.svg" alt="minus">
+                                    <span style="font-family: 'Tajawal-Medium';
+                                    font-size: 24px; color:#fff;
+                                     text-align: right;" class="m-0 mr-4">الاشتراك بالمشروع كامل</span>
+                                </div>
+                                <div class="details" style="display: block;">
+                                    <p style="font-family: 'Tajawal-Light';
+                                    font-size: 16px; color:#fff;
+                                     text-align: right;" class="m-0 mr-4">هذا النص هو مثال لنص يمكن أن يستبدل في نفس
+                                        المساحة، لقد تم توليد هذا النص من مولد
+                                        النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى
+                                        إضافة
+                                        إلى
+                                        زيادة عدد الحروف التى يولدها التطبيق.</p>
+                                </div>
+                            </li>
+                            <li class="my-2">
+                                <div class="list-item">
+                                    <img class="icon plus-icon" src="assets/image/svg/plus.svg" alt="plus">
+                                    <img class="icon minus-icon" src="assets/image/svg/minus.svg" alt="minus"
+                                        style="display: none;">
+                                    <span style="font-family: 'Tajawal-Medium';
+                                    font-size: 24px; color:#fff;
+                                     text-align: right;" class="m-0 mr-4">هل توفرون التدريب للشركات في الموقع؟</span>
+                                </div>
+                                <div class="details">
+                                    <p style="font-family: 'Tajawal-Light';
+                                    font-size: 16px; color:#fff;
+                                     text-align: right;" class="m-0 mr-4">هذا النص هو مثال لنص يمكن أن يستبدل في نفس
+                                        المساحة، لقد تم توليد هذا النص من مولد
+                                        النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى
+                                        إضافة
+                                        إلى
+                                        زيادة عدد الحروف التى يولدها التطبيق.</p>
+                                </div>
+                            </li>
+                            <li class="my-2">
+                                <div class="list-item">
+                                    <img class="icon plus-icon" src="assets/image/svg/plus.svg" alt="plus">
+                                    <img class="icon minus-icon" src="assets/image/svg/minus.svg" alt="minus"
+                                        style="display: none;">
+                                    <span style="font-family: 'Tajawal-Medium';
+                                    font-size: 24px; color:#fff;
+                                     text-align: right;" class="m-0 mr-4">هل تقدمون دورات خاصة عبر الإنترنت وجهًا
+                                        لوجه؟</span>
+                                </div>
+                                <div class="details">
+                                    <p style="font-family: 'Tajawal-Light';
+                                    font-size: 16px; color:#fff;
+                                     text-align: right;" class="m-0 mr-4">هذا النص هو مثال لنص يمكن أن يستبدل في نفس
+                                        المساحة، لقد تم توليد هذا النص من مولد
+                                        النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى
+                                        إضافة
+                                        إلى
+                                        زيادة عدد الحروف التى يولدها التطبيق.</p>
+                                </div>
+                            </li>
+                            <li class="mb-2">
+                                <div class="list-item">
+                                    <img class="icon plus-icon" src="assets/image/svg/plus.svg" alt="plus">
+                                    <img class="icon minus-icon" src="assets/image/svg/minus.svg" alt="minus"
+                                        style="display: none;">
+                                    <span style="font-family: 'Tajawal-Medium';
+                                    font-size: 24px; color:#fff;
+                                     text-align: right;" class="m-0 mr-4">
+                                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا
+                                        النص من
+                                        مولد النص العربى؟</span>
+                                </div>
+                                <div class="details">
+                                    <p style="font-family: 'Tajawal-Light';
+                                    font-size: 16px; color:#fff;
+                                     text-align: right;" class="m-0 mr-4">هذا النص هو مثال لنص يمكن أن يستبدل في نفس
+                                        المساحة، لقد تم توليد هذا النص من مولد
+                                        النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى
+                                        إضافة
+                                        إلى
+                                        زيادة عدد الحروف التى يولدها التطبيق.</p>
+                                </div>
+                            </li>
+                            <li class="my-2">
+                                <div class="list-item">
+                                    <img class="icon plus-icon" src="assets/image/svg/plus.svg" alt="plus">
+                                    <img class="icon minus-icon" src="assets/image/svg/minus.svg" alt="minus"
+                                        style="display: none;">
+                                    <span style="font-family: 'Tajawal-Medium';
+                                    font-size: 24px; color:#fff;
+                                     text-align: right;" class="m-0 mr-4">
+                                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة؟
+                                    </span>
+                                </div>
+                                <div class="details">
+                                    <p style="font-family: 'Tajawal-Light';
+                                    font-size: 16px; color:#fff;
+                                     text-align: right;" class="m-0 mr-4">هذا النص هو مثال لنص يمكن أن يستبدل في نفس
+                                        المساحة، لقد تم توليد هذا النص من مولد
+                                        النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى
+                                        إضافة
+                                        إلى
+                                        زيادة عدد الحروف التى يولدها التطبيق.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- feature7 footer-->
+    <div class="row align-items-center justify-content-center feature6">
+        <div class="col-10">
+            <div class="row align-items-center justify-content-center ">
+                <div class="col-md-4   d-flex  align-items-center justify-content-center">
+                    <img src="assets/image/logo.png" width="179" height="71" />
+                </div>
+                <div class="col-md-8 links">
+                    <div class="row">
+                        <div class="col-6">
+                            <p class="text-right footer-quick">روابط سريعة</p>
+                        </div>
+                    </div>
+                    <div class="row last-three">
+                        <div class="col-md-4 m-0">
+                            <ul class="p-0">
+                                <li>
+                                    <a href="#">
+                                        <p class="text-right">
+                                            مشاريعنا
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p class="text-right">
+                                            دوراتنا
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p class="text-right">
+                                            اشتراكاتنا
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p class="text-right">
+                                            الية الاشتراك
+                                        </p>
+                                    </a>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 ">
+                            <ul class="footer-list">
+                                <li>
+                                    <a href="#">
+                                        <p class="text-right">
+                                            عنـــــا
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p class="text-right">
+                                            اراء الطلاب
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p class="text-right">
+                                            الشراكات
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 ">
+                            <ul class="footer-list ">
+                                <li>
+                                    <a href="#">
+                                        <p class="text-right">
+                                            تواصل معنا
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p class="text-right">
+                                            الشروط والاحكام
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p class="text-right">
+                                            English
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- copyright -->
+    <div class="row justify-content-between" id="copyright">
+        <div class="col-md-4 text-white align-self-center text-center text-md-right my-2 d-flex justify-content-center">
+            جميع الحقوق محفوظة لصالح <span>© 2024QACart, </span>
+        </div>
+        <div class="col-md-4 align-self-center text-center text-md-right my-2 d-flex justify-content-center"
+            id="social-media">
+            <a class="d-inline-block text-center ml-2 bg-transparent text-white">
+                <img src="assets/image/svg/instagram.svg" width="35" height="35">
+            </a>
+            <a class="d-inline-block text-center ml-2 bg-transparent text-white">
+                <img src="assets/image/svg/twitter.svg" width="35" height="35">
+            </a>
+            <a class="d-inline-block text-center ml-2 bg-transparent text-white">
+                <img src="assets/image/svg/facebook.svg" width="35" height="35">
+            </a>
+            <a class="d-inline-block text-center ml-2 bg-transparent text-white">
+                <img src="assets/image/svg/linkedin.svg" width="35" height="35">
+            </a>
+        </div>
+    </div>
+
+
+    <!-- AOS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.0/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function () {
+            AOS.init({
+            });
+            $('.nav-link').on('click', function () {
+                $('.nav-link').removeClass('active'); // Remove 'active' class from all nav-links
+                $(this).addClass('active'); // Add 'active' class to the clicked nav-link
+            });
+
+
+            $('.carousel').slick({
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                infinite: true,
+                centerPadding: "100px",
+                centerMode: true,
+                prevArrow: `<button type="button" class="slick-prev">
+                   <img src="assets/image/viloetarrow.png" width="60" /></button>`,
+                nextArrow: `<button type="button" class="slick-next">
+                   <img src="assets/image/viloetarrowright.png" width="60" /></button>`,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+
+            $('.slick-carousel').slick({
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                infinite: true,
+                slidesToShow: 4,
+                prevArrow: `<button type="button" class="slick-prev">
+                   <img src="assets/image/viloetarrow.png" width="60" /></button>`,
+                nextArrow: `<button type="button" class="slick-next">
+                   <img src="assets/image/viloetarrowright.png" width="60" /></button>`,
+                mobileFirst: true,
+                responsive: [
+                    {
+                        breakpoint: 1900,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 1,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 1290,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 1083,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 800,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 360,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+
+
+            // owl.on('mousewheel', '.owl-stage', function (e) {
+            //     if (e.deltaY > 0) {
+            //         owl.trigger('next.owl');
+            //     } else {
+            //         owl.trigger('prev.owl');
+            //     }
+            //     e.preventDefault();
+            // });
+
+
+            $('.list-item').click(function () {
+                var $details = $(this).next('.details');
+                var $plusIcon = $(this).find('.plus-icon');
+                var $minusIcon = $(this).find('.minus-icon');
+
+                $details.toggle();
+                $plusIcon.toggle();
+                $minusIcon.toggle();
+            });
+        });
+    </script>
+
+</body>
+
+</html>
