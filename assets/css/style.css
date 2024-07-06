@@ -797,13 +797,17 @@ div.slick-slide div.slide-content2 {
     .mulogoz {
         justify-content: center !important;
     }
+
 }
 
 @media only screen and (max-width: 768px) {
-    .shape-content {
+
+    .shape-content,
+    .shape-content2 {
         height: 559px !important;
 
     }
+
 
     .navbar {
         background-color: rgba(1, 23, 71, 0.8) !important;
@@ -853,7 +857,7 @@ div.slick-slide div.slide-content2 {
 
     .image-half,
     .image-half2 {
-        background-size: cover;
+        background-size: contain;
         background-position: 50%;
     }
 
