@@ -68,6 +68,8 @@ body {
     box-sizing: border-box;
 }
 
+
+
 .containero {
     position: relative;
     width: 584px;
@@ -654,6 +656,15 @@ li>a>p {
     width: 50px;
 }
 
+.slick-vertical .slick-slide {
+    height: 282px !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: end;
+    align-items: center;
+}
+
+
 .slick-slide {
     direction: ltr;
     text-align: center;
@@ -839,6 +850,17 @@ div.slick-slide div.slide-content2 {
     overflow-wrap: break-word;
 }
 
+.vertical-h {
+    font-size: 40px;
+    font-family: 'Tajawal-Bold';
+}
+
+.vertical-p {
+    font-size: 24px;
+    font-family: 'Tajawal-Regular';
+    color: rgba(255, 255, 255, 0.72)"
+
+}
 
 /********** RWD **********/
 @media (max-width: 575px) {
@@ -883,8 +905,12 @@ div.slick-slide div.slide-content2 {
     .pots-srection {
         height: 100%;
     }
-    .image-curved{
+
+    .image-curved {
         display: none !important;
+    }
+    .m-md-2{
+        margin-bottom: 50px;
     }
 }
 
@@ -918,8 +944,12 @@ div.slick-slide div.slide-content2 {
     .pots-srection {
         height: 100%;
     }
+
     .footer-list::before {
-        right:  0 !important;
+        right: 0 !important;
+    }
+    .m-md-2{
+        margin-bottom: 50px;
     }
 }
 
@@ -1129,9 +1159,34 @@ div.slick-slide div.slide-content2 {
         height: 100%;
     }
 
-    .image-curved{
+    .image-curved {
         display: none !important;
     }
+
+    .nav-item {
+        margin: 0 !important;
+    }
+
+    .vertical-h {
+        font-size: 31px;
+        font-family: 'Tajawal-Bold';
+    }
+
+    .vertical-p {
+        font-size: 16px;
+        font-family: 'Tajawal-Regular';
+        color: rgba(255, 255, 255, 0.72)"
+
+    }
+
+    .slick-vertical .slick-slide {
+        height: 282px !important;
+        width: 100% !important;
+        display: flex !important;
+        justify-content: end;
+        align-items: center;
+    }
+
 }
 
 /* Tablette Screen */
@@ -1146,10 +1201,14 @@ div.slick-slide div.slide-content2 {
         background-color: rgba(255, 255, 255, 0.24) !important;
         border-radius: 20px !important;
     }
+
+    .nav-item {
+        margin: 0 !important;
+    }
 }
 
 /* Hight Resoloution */
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1044px) {
     .nav-item {
         margin: 20px;
     }
@@ -1200,6 +1259,25 @@ div.slick-slide div.slide-content2 {
     .pots-srection {
         height: 100% !important;
     }
+    .vertical-h {
+        font-size: 31px;
+        font-family: 'Tajawal-Bold';
+    }
+
+    .vertical-p {
+        font-size: 16px;
+        font-family: 'Tajawal-Regular';
+        color: rgba(255, 255, 255, 0.72)"
+
+    }
+
+    .slick-vertical .slick-slide {
+        height: 282px !important;
+        width: 100% !important;
+        display: flex !important;
+        justify-content: end;
+        align-items: center;
+    }
 
 }
 
@@ -1207,25 +1285,66 @@ div.slick-slide div.slide-content2 {
     .point {
         top: 73% !important;
     }
-    .point.center{
-        top: 80% !important; 
+
+    .point.center {
+        top: 80% !important;
+    }
+
+    .vertical-h {
+        font-size: 31px;
+        font-family: 'Tajawal-Bold';
+    }
+
+    .vertical-p {
+        font-size: 16px;
+        font-family: 'Tajawal-Regular';
+        color: rgba(255, 255, 255, 0.72)"
+
+    }
+
+    .slick-vertical .slick-slide {
+        height: 282px !important;
+        width: 100% !important;
+        display: flex !important;
+        justify-content: end;
+        align-items: center;
     }
 }
+
 @media only screen and (min-width: 1516px) {
     .point {
         top: 55% !important;
     }
-    .point.center{
-        top: 83% !important; 
+
+    .point.center {
+        top: 83% !important;
+    }
+    .vertical-h {
+        font-size: 41px;
+        font-family: 'Tajawal-Bold';
+    }
+
+    .vertical-p {
+        font-size: 24px;
+        font-family: 'Tajawal-Regular';
+        color: rgba(255, 255, 255, 0.72)"
+
+    }
+    .slick-vertical .slick-slide {
+        height: 302px !important;
+        width: 100% !important;
+        display: flex !important;
+        justify-content: end;
+        align-items: center;
     }
 }
+
 @media only screen and (min-width: 1908px) {
     .point.center {
         top: 55%;
     }
 
 }
-
 @media only screen and (min-width: 2008px) {
     .point.center {
         top: 59%;
